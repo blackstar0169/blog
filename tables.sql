@@ -78,7 +78,7 @@ DROP TRIGGER IF EXISTS posts_deleting;
 DELIMITER //
 
 CREATE TRIGGER posts_after_delete
-AFTER DELETE
+BEFORE DELETE
    ON posts FOR EACH ROW
    
 BEGIN
